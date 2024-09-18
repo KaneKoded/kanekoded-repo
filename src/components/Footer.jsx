@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-gray-600 text-xs mt-5 flex justify-center">
+      <div className="text-gray-400 text-xs mt-5 flex justify-center">
         Koded by Lisa Kane
       </div>
     </footer>
