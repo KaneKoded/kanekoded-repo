@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-Inter bg-slate-800;
+    @apply subpixel-antialiased font-Inter bg-slate-800;
   }
 }
 
@@ -23,12 +23,12 @@
   }
 
   .nav-link {
-    @apply grid items-center h-9 px-4 text-sm font-normal tracking-wide text-gray-300    
+    @apply grid items-center h-11 px-4 text-sm font-normal tracking-wide text-gray-300    
     hover:text-white transition-colors;
   }
 
   .nav-link.active {
-    @apply text-orange-500 font-medium duration-500;
+    @apply text-orange-400 font-medium duration-500;
   }
 
   .menu-btn {
@@ -42,7 +42,7 @@
   }
 
   .primary-btn {
-    @apply text-zinc-900 bg-orange-600 hover:text-zinc-950 hover:bg-orange-500 hover:scale-105;
+    @apply text-zinc-800 bg-orange-500 hover:scale-105;
   }
 
   .socials {

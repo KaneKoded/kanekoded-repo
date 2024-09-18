@@ -5,22 +5,16 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="header">
-      <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]">
-        <h1>
-          <a
-            href="/"
-            className="font-Oswald font-bold text-white text-2xl leading-[1.20rem]"
-            alt="KaneKoded"
-          >
+      <div className="max-w-screen-2xl w-full mx-auto px-3 sm:px-4 md:px-6 flex justify-between items-center md:grid md:grid-cols-[1fr,3fr,1fr]">
+        <h1 className="font-Oswald font-medium text-zinc-100 text-2xl leading-4">
+          <a href="/" alt="KaneKoded">
             <span className="block">
-              Ka<span className="text-orange-600">n</span>e
-              <span className="material-symbols-rounded text-orange-600 leading-3">
+              Kane
+              <span className="material-symbols-rounded text-orange-500 leading-4">
                 undo
               </span>
             </span>
-            <span className="block">
-              Ko<span className="text-orange-600">d</span>ed
-            </span>
+            <span className="block">Koded</span>
           </a>
         </h1>
         <div className="relative md:justify-self-center">

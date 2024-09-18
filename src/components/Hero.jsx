@@ -2,33 +2,34 @@ import { FaReact } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="home" data-link="#home" className="section h-[52ch]">
-      <div className="container mt-6 h-full bg-zinc-900/75 rounded-lg overflow-hidden">
-        <div className="w-full h-full relative">
-          {/**background */}
-          <div className="relative w-full h-full flex items-center backdrop-brightness-50">
-            <FaReact className="absolute top-[-40vh] right-[-8vw] z-10 text-slate-800/45 font-semibold text-[50rem]" />
+    <section id="home" data-link="#home" className="section h-[100vh]">
+      <div className="h-full bg-zinc-900/75 rounded-lg">
+        <div className="h-full relative">
+          <div className="relative w-full h-full flex items-center backdrop-brightness-50 overflow-hidden">
+            <FaReact className="absolute top-[-20vh] right-[-7vw] z-10 text-slate-800/45 font-semibold text-[54rem]" />
           </div>
-          {/**foreground */}
-          <div className="absolute top-0 h-full z-20 mt-6 md:mt-10 flex flex-col items-start xl:mt-14">
-            <h1 className="sm:ml-4 text-gray-100 font-medium leading-tight">
-              <span className="block pb-1 text-2xl font-medium text-orange-600 tracking-wide">
+
+          <div className="absolute top-0 h-full w-full z-20 px-3 sm:px-10 lg:px-24 flex flex-col gap-14 items-start justify-center">
+            <div className="font-medium leading-tight max-w-4xl">
+              <h1 className="mb-2 text-2xl sm:text-3xl text-orange-500">
                 Using React
-              </span>
-              <span className="block text-3xl sm:text-4xl">
+              </h1>
+              <h1 className="text-gray-100 text-4xl sm:text-5xl">
                 Activate Navigation
-              </span>
-              <span className="block text-3xl sm:text-4xl">Item on Scroll</span>
-            </h1>
-
-            <h3 className="sm:ml-4 block pt-8 text-orange-600 text-sm font-medium tracking-wide">
-              A Simple Demonstration
-            </h3>
-
-            <p className="sm:ml-4 my-1 max-w-[400px] text-xs font-[100] text-gray-100 tracking-wider leading-5">
-              How to activate the current navigation item in a menu when
-              scrolling to its corresponding section.
-            </p>
+              </h1>
+              <h1 className="text-gray-100 text-4xl sm:text-5xl">
+                Item on Scroll
+              </h1>
+            </div>
+            <div>
+              <h3 className="block text-orange-400 text-lg sm:text-2xl font-medium tracking-wide">
+                A Simple Demo
+              </h3>
+              <p className="antialiased my-1 sm:max-w-[580px] text-base sm:text-xl font-normal text-gray-100 tracking-wider leading-7">
+                Set the current navigation item to active when scrolling to the
+                corresponding section.
+              </p>
+            </div>
           </div>
         </div>
       </div>
