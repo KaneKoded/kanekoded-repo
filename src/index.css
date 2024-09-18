@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-Inter bg-slate-800;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply absolute top-full mt-2 right-0 min-w-40 p-2 scale-90 isolate blur-sm opacity-0 invisible backdrop-blur-2xl 
+        md:static md:flex md:items-center md:mt-0 md:bg-transparent md:opacity-100 md:blur-0 md:ring-transparent md:visible md:scale-100 md:backdrop-blur-0;
+  }
+
+  .navbar.active {
+    @apply bg-zinc-950/70 rounded-xl ring-inset ring-1 ring-zinc-50/5 opacity-100 scale-100 blur-0 visible;
+  }
+
+  .nav-link {
+    @apply grid items-center h-9 px-4 text-sm font-normal tracking-wide text-gray-300    
+    hover:text-white transition-colors;
+  }
+
+  .nav-link.active {
+    @apply text-orange-500 font-medium duration-500;
+  }
+
+  .menu-btn {
+    @apply w-10 h-10 grid place-items-center rounded-full text-gray-100 ring-inset ring-1 ring-zinc-50/[0.02] 
+     transition-[transform,background-color] hover:bg-zinc-50/15;
+  }
+
+  .btn {
+    @apply max-w-max h-8 flex items-center gap-2 px-4 rounded-2xl font-semibold text-xs 
+      ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
+  }
+
+  .primary-btn {
+    @apply text-zinc-900 bg-orange-600 hover:text-zinc-950 hover:bg-orange-500 hover:scale-105;
+  }
+
+  .socials {
+    @apply text-zinc-400 hover:text-zinc-200;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply px-4 mx-auto lg:px-8 xl:max-w-4xl;
+  }
+
+  .header {
+    @apply fixed top-0 left-0 w-full h-20 flex 
+    items-center z-50 bg-gradient-to-b from-zinc-950 
+    to-zinc-950/70;
+  }
+
+  .section {
+    @apply pt-20;
+  }
+
+  .img-box {
+    @apply bg-zinc-700 overflow-hidden;
+  }
+
+  .img-cover {
+    @apply w-full h-full object-cover;
+  }
+}
