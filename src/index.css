@@ -14,17 +14,23 @@
 
 @layer components {
   .navbar {
-    @apply absolute top-full mt-2 right-0 min-w-40 p-2 scale-90 isolate blur-sm opacity-0 invisible backdrop-blur-2xl 
-        md:static md:flex md:items-center md:mt-0 md:bg-transparent md:opacity-100 md:blur-0 md:ring-transparent md:visible md:scale-100 md:backdrop-blur-0;
+    @apply absolute z-40 min-w-40 py-10 md:py-0 scale-90 md:scale-100 isolate 
+    opacity-0 invisible md:visible 
+    backdrop-blur-2xl md:backdrop-blur-0
+    md:static md:flex md:items-center md:mt-0 
+    md:bg-transparent md:opacity-100 md:ring-0;
   }
 
   .navbar.active {
-    @apply bg-zinc-950/70 rounded-xl ring-inset ring-1 ring-zinc-50/5 opacity-100 scale-100 blur-0 visible;
+    @apply top-[-15px] right-[-15px] min-w-52 h-auto 
+    ring-inset ring-1 ring-zinc-50/5 bg-zinc-950/70 rounded-xl 
+    opacity-100 scale-100 visible transition-transform duration-300;
   }
 
   .nav-link {
-    @apply grid items-center h-11 px-4 text-sm font-normal tracking-wide text-gray-300    
-    hover:text-white transition-colors;
+    @apply grid items-center h-11 py-2 px-4 
+    text-sm font-normal tracking-wide 
+    text-gray-300 hover:text-white transition-colors;
   }
 
   .nav-link.active {
@@ -32,8 +38,8 @@
   }
 
   .menu-btn {
-    @apply w-10 h-10 grid place-items-center rounded-full text-gray-100 ring-inset ring-1 ring-zinc-50/[0.02] 
-     transition-[transform,background-color] hover:bg-zinc-50/15;
+    @apply relative w-10 h-10 grid place-items-center rounded-full text-gray-100 ring-inset ring-1 ring-zinc-50/[0.02] 
+     transition-[transform,background-color] hover:bg-zinc-50/15 z-50;
   }
 
   .btn {
@@ -52,7 +58,7 @@
 
 @layer utilities {
   .container {
-    @apply px-4 mx-auto lg:px-8 xl:max-w-4xl;
+    @apply px-4 py-2 mx-auto lg:px-6 xl:max-w-4xl rounded-lg;
   }
 
   .header {
@@ -62,7 +68,7 @@
   }
 
   .section {
-    @apply pt-20;
+    @apply relative mb-10 min-h-[540px];
   }
 
   .img-box {
