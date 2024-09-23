@@ -14,7 +14,7 @@
 
 @layer components {
   .navbar {
-    @apply absolute z-40 min-w-40 py-10 md:py-0 scale-90 md:scale-100 isolate 
+    @apply absolute z-40 min-w-52 md:min-w-40 py-10 md:py-0 scale-90 md:scale-100 isolate 
     opacity-0 invisible md:visible 
     backdrop-blur-2xl md:backdrop-blur-0
     md:static md:flex md:items-center md:mt-0 
@@ -28,8 +28,8 @@
   }
 
   .nav-link {
-    @apply grid items-center h-11 py-2 px-4 
-    text-sm font-normal tracking-wide 
+    @apply grid items-center h-12 py-2 px-4 
+    text-lg md:text-sm font-normal tracking-wide 
     text-gray-300 hover:text-white transition-colors;
   }
 

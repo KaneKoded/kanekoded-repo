@@ -11,7 +11,6 @@ const Header = () => {
 
   const closeActiveMenu = () => {
     const nav = document.querySelector(".navbar");
-    console.log(window.innerWidth);
 
     if (window.innerWidth >= 768) {
       if (nav.classList.contains("active")) {
@@ -37,6 +36,7 @@ const Header = () => {
         </h1>
         <div className="relative md:justify-self-center">
           <button
+            id="menuBtn"
             className="menu-btn md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
           >

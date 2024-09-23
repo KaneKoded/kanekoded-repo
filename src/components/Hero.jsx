@@ -12,23 +12,23 @@ const Hero = () => {
             />
           </div>
 
-          <div className="absolute top-0 h-full w-full z-20 pb-10 px-3 sm:px-10 lg:px-24 flex flex-col gap-y-14 items-start justify-end">
-            <div className="mt-4 font-medium leading-tight">
+          <div className="absolute top-0 h-full w-full z-20 pt-10 md:pt-0 md:pb-10 px-3 sm:px-10 lg:px-24 flex flex-col gap-y-14 items-start justify-center md:justify-end">
+            <div className="mt-0 md:mt-4 font-medium leading-tight">
               <h1 className="mb-2 text-2xl sm:text-3xl text-orange-500">
                 Using React
               </h1>
-              <h1 className="text-gray-100 text-4xl sm:text-5xl">
+              <h1 className="text-gray-100 text-4xl md:text-5xl">
                 Activate Navigation
               </h1>
-              <h1 className="text-gray-100 text-4xl sm:text-5xl">
+              <h1 className="text-gray-100 text-4xl md:text-5xl">
                 Item on Scroll
               </h1>
             </div>
             <div>
-              <h3 className="block text-orange-400 text-base sm:text-xl font-medium tracking-wide">
+              <h3 className="text-orange-400 text-base md:text-xl font-medium tracking-wide">
                 A Simple Demo
               </h3>
-              <p className="antialiased my-1 sm:max-w-[580px] text-base sm:text-xl font-normal text-gray-100 tracking-wider leading-7">
+              <p className="antialiased my-1 sm:max-w-[580px] pb-10 md:pb-0 text-base md:text-xl font-normal text-gray-100 tracking-wider leading-7">
                 Set the current navigation item to active when scrolling to the
                 corresponding section.
               </p>

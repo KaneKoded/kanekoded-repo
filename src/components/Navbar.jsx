@@ -32,6 +32,11 @@ const Navbar = ({ menuOpen }) => {
     currentActiveLink(navLink);
   };
 
+  const clickHandler = (event) => {
+    currentActiveLink(event.target);
+    menuOpen && document.getElementById("menuBtn").click();
+  };
+
   const navItems = [
     {
       text: "Home",
@@ -69,7 +74,7 @@ const Navbar = ({ menuOpen }) => {
           key={key}
           ref={ref}
           className={className}
-          onClick={(event) => currentActiveLink(event.target)}
+          onClick={clickHandler}
         >
           {text}
         </a>
